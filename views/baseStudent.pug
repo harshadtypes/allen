@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Allen Digital
+  link(rel='stylesheet' href='../static/styleStudent.css')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap', rel='stylesheet')
+
+section#tux
+nav.navbar
+  .logo-container
+    .logo-box 
+      img.logo-img.logo(src='../static/THINKFIC/THINKFIC - UI_UX/Logo/Logo - photo.png' alt='')
+      //img.logo-text.logo(src='../static/THINKFIC/THINKFIC - UI_UX/Logo/Logo - text.png' alt='')
+      h2.logo-text.logo ALLEN
+      //- h4.exit-text.logo To logout-
+      img#exit.exit.logo(src='../static/THINKFIC/THINKFIC - UI_UX/IONIcon/E/exit/default.png' alt='' onclick="slide()")
+  .user-container
+    .user-box
+      img#profile-btn.user-img(src='../static/THINKFIC/THINKFIC - UI_UX/UI Faces/UI face - 1.png' alt='')
+aside.aside
+  .aside-container
+    .aside-box
+      img.tv(src='../static/THINKFIC/THINKFIC - UI_UX/IONIcon/T/tv/outline.png' alt='')
+      p#live-btn.live.pImpo
+        a(href='/live/') Live
+      p#recorded-btn.recorded.pImpo
+        a(href='/recorded/') Recorded
+      p#doubt-btn.doubt.pImpo
+        a(href='/doubt/') Doubt
+      img#inbox-btn.folder(src='../static/THINKFIC/THINKFIC - UI_UX/IONIcon/F/folder/open/outline.png' alt='')
+      img#documents-btn.document(src='../static/THINKFIC/THINKFIC - UI_UX/IONIcon/D/document/text/outline.png' alt='')
+
+block content 

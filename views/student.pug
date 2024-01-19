@@ -1,0 +1,59 @@
+extends baseStudent.pug 
+
+block content
+  section.main  
+    .grid-container
+      .time-container
+        .timex-container
+          p#timex.timex
+        .calender-container
+          img.calender(src='../static/THINKFIC/THINKFIC - UI_UX/IONIcon/C/calendar/default.png' alt='')
+          .date-box
+            p#date.date 23 - May, 2021
+            p#next-session.next-session Next Session at 2:30 PM, 
+              b#countd 15 mins left
+        .illu-container
+          img.illu(src='../static/THINKFIC/THINKFIC - UI_UX/Illustrations/Illustration - 2.png' alt='')
+      .intro-container
+        img.intro-img(src='../static/THINKFIC/THINKFIC - UI_UX/Illustrations/Illustration - 1.png' alt='')
+        p.intro-title Introduction
+        p.intro-sir Keshav Sir
+    .lecture-main
+      .lecture-time
+        p.lecture-timex.time1 2:00
+        p.lecture-timex.time2 3:00
+        p.lecture-timex.time3 4:00
+        p.lecture-timex.time4 5:00
+        p.lecture-timex.time5 6:00
+        p.lecture-timex.time6 7:00
+      .lecture-info
+        .lecture-card
+          .card-title 
+            .title-text 
+              p.para-text Knowledge is Power share it!- Webinar 
+            .title-time 
+              p.para-time 2:30-4:30
+          .card-preview 
+            img#prev-img.preview-img(src='../static/THINKFIC/THINKFIC - UI_UX/Elements/Element - 1.png', alt="")
+            img.preview-img2(src="../static/THINKFIC/THINKFIC - UI_UX/Group_58.png", alt="")
+          .card-time 
+            .card-empty
+            .card-empty
+            .card-empty
+            .card-empty
+            .card-hours.float
+              p.para-hour.bold 00
+              p.hour-text.modify HOURS
+            .card-mins.float 
+              p.para-mins.bold 15
+              p.mins-text.modify MINUTES
+            .card-secs.float 
+              p.para-secs.bold 49
+              p.secs-text.modify SECONDS
+            .card-empty
+          .card-buttons 
+            .card-start 
+              button#start-btn.btn-shade.btn Start 
+            .card-remind 
+              button#rset.btn-blue.btn Remind Me
+  script(src='../static/student.js')
