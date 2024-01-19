@@ -11,6 +11,5 @@
         "src": "/(.*)",
         "dest": "main.js"
       }
-    ],
-    "rewrites":[{"source":"/static/(.*)", "destination":"/static"}]
+    ]
   }
