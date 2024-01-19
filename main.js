@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 const port = 8080;
 
-app.use('/static',express.static('static'))
+app.use('/public',express.static('public'))
 
 app.set('view engine', 'pug')
 

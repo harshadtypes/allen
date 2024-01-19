@@ -10,10 +10,6 @@
       {
         "src": "/(.*)",
         "dest": "main.js"
-      },
-      {
-        "src":"/static/(.*)",
-        "dest":"/static/$1"
       }
     ]
   }
